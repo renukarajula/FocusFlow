@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | FocusFlow</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <!-- Register Section -->
+
+    <section class="register">
+
+        <div class="register-container">
+
+            <!-- Left Side -->
+            <div class="register-left">
+                <div class="register-content">
+
+    <img src="./assets/images/register.png"
+         alt="Register Illustration">
+
+    <h1>Welcome to FocusFlow</h1>
+
+    <p>
+        Join thousands of users who organize their tasks, improve productivity,
+        and achieve their goals every day.
+    </p>
+
+</div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="register-right">
+                <div class="register-form">
+
+    <h2>Create Account</h2>
+
+    <p>
+        Create your account to start managing your tasks efficiently.
+    </p>
+
+    <form id="registerForm">
+
+        <!-- Full Name -->
+        <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                placeholder="Enter your full name"
+                required>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required>
+        </div>
+
+        <button type="submit" class="register-btn">
+            Create Account
+        </button>
+
+    </form>
+
+    <p class="login-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="./js/register.js"></script>
+
+
+</body>
+
+</html>

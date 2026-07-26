@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "fullname": "Laxmi",
+      "email": "laxmi@gmail.com",
+      "password": "009900",
+      "id": "zaN25JhCv88"
+    },
+    {
+      "fullname": "heidi",
+      "email": "heidi@gmail.com",
+      "password": "123123",
+      "id": "vMwJXLVGXv8"
+    },
+    {
+      "fullname": "hello",
+      "email": "heidi1@gmail.com",
+      "password": "567765",
+      "id": "2qak5eREa_k"
+    },
+    {
+      "fullname": "Reins",
+      "email": "renu@gmail.com",
+      "password": "2424",
+      "id": "QGq9JBlUA1M"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Learn AWS",
+      "completed": true,
+      "createdAt": "2026-07-22T06:19:06.921Z",
+      "id": "GEqKhr_ZW8I",
+      "priority": "Low"
+    },
+    {
+      "title": "Practice DSA",
+      "completed": false,
+      "createdAt": "2026-07-22T06:20:43.693Z",
+      "id": "DzCENbTcqig",
+      "priority": "High"
+    },
+    {
+      "title": "Practice Aptitude",
+      "completed": true,
+      "createdAt": "2026-07-22T06:21:33.624Z",
+      "id": "pE-3MQnA_5k",
+      "priority": "Medium"
+    },
+    {
+      "title": "Recall MernStack",
+      "completed": true,
+      "createdAt": "2026-07-22T06:23:19.409Z",
+      "id": "iDAFDgu3bsw",
+      "priority": "Medium"
+    },
+    {
+      "title": "Learn CSS",
+      "completed": true,
+      "createdAt": "2026-07-22T16:04:05.309Z",
+      "id": "p_G5mvD1Oyw",
+      "priority": "Medium"
+    },
+    {
+      "title": "Complete Core Java Project",
+      "completed": true,
+      "createdAt": "2026-07-22T17:21:11.897Z",
+      "id": "mwztMD79a2c",
+      "priority": "High"
+    },
+    {
+      "title": "Learn Python",
+      "completed": false,
+      "createdAt": "2026-07-22T17:21:35.565Z",
+      "id": "Wp92mHayUnc",
+      "priority": "Medium"
+    },
+    {
+      "title": "Learn Hindi",
+      "completed": false,
+      "createdAt": "2026-07-22T18:22:47.260Z",
+      "id": "wLE2NAv0s0U",
+      "priority": "Low"
+    },
+    {
+      "title": "Learn Hindi",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-07-23T17:18:59.762Z",
+      "id": "5XzcM7uQuvg"
+    },
+    {
+      "title": "Learn English",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-07-23T17:23:41.957Z",
+      "id": "eiF89hKLVBE"
+    },
+    {
+      "title": "Learn Telugu",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-07-23T18:00:43.198Z",
+      "id": "kTuELTa2a1k"
+    },
+    {
+      "title": "learn speak",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-07-23T18:06:43.010Z",
+      "id": "zoeHtLBqerc"
+    },
+    {
+      "title": "Learn Tamil",
+      "priority": "Low",
+      "completed": false,
+      "createdAt": "2026-07-24T16:58:06.013Z",
+      "id": "izv-bBv0atA"
+    },
+    {
+      "title": "Revise JavaScript",
+      "priority": "Medium",
+      "completed": false,
+      "createdAt": "2026-07-24T16:58:29.354Z",
+      "id": "RZM7dcpvfjk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

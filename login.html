@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FocusFlow</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <section class="login">
+        <div class="login-container">
+             <!-- Left Side -->
+            <div class="login-left">
+                <div class="login-content">
+                    <img src="./assets/images/login.png" alt="Login Illustration">
+                    <h1>Welcome Back!</h1>
+                    <p>
+                        Login to your FocusFlow account and continue managing your daily tasks effectively
+                    </p>
+                </div>
+            </div>
+          <!--Right Side-->
+          <div class="login-right">
+            <div class="login-form">
+                <h2>Login</h2>
+                <p>
+                    Enter your email and password to continue.
+                </p>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input
+                           type="email"
+                           id="email"
+                           placeholder="Enter your Email"
+                           required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="Enter your password"
+                          required>
+                    </div>
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                </form>
+                <p class="register-link">
+                    Don't have an account?
+                    <a href="register.html">Register</a>
+                </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script src="./js/login.js"></script>
+    
+</body>
+</html>

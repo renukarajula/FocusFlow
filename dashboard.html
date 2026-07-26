@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FocusFlow</title>
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Dashboard Header
+    ========================== -->
+
+    <header class="dashboard-header">
+
+        <h1 id="welcomeMessage"></h1>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </header>
+
+    <!-- =========================
+         Dashboard Container
+    ========================== -->
+
+    <main class="dashboard-container">
+
+        <!-- =========================
+             LEFT PANEL
+        ========================== -->
+
+        <section class="task-section">
+
+            <h2>📋 My Tasks</h2>
+
+            <!-- Filter Buttons -->
+
+            <div class="filter-buttons">
+
+                <button id="allBtn" type="button">
+                    All
+                </button>
+
+                <button id="pendingBtn" type="button">
+                    Pending
+                </button>
+
+                <button id="completedBtn" type="button">
+                    Completed
+                </button>
+
+            </div>
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search tasks..."
+            >
+
+            <!-- Add Task -->
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                    required
+                >
+
+                <select id="priority">
+
+                    <option value="High">🔴 High</option>
+
+                    <option value="Medium">🟡 Medium</option>
+
+                    <option value="Low">🟢 Low</option>
+
+                </select>
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+
+            <!-- =========================
+                 Task Statistics
+            ========================== -->
+
+            <div class="task-stats">
+
+                <div class="stat-card">
+
+                    <h3 id="totalTasks">0</h3>
+
+                    <p>Total Tasks</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 id="pendingTasks">0</h3>
+
+                    <p>Pending</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 id="completedTasks">0</h3>
+
+                    <p>Completed</p>
+
+                </div>
+
+            </div>
+
+            <!-- Tasks -->
+
+            <div id="taskContainer">
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             RIGHT PANEL
+        ========================== -->
+
+        <div class="right-panel">
+
+            <!-- =========================
+                 Pomodoro Timer
+            ========================== -->
+
+            <section class="timer-section">
+
+                <h2>🍅 Pomodoro Timer</h2>
+
+                <h1 id="timerDisplay">
+                    25:00
+                </h1>
+
+                <div class="timer-buttons">
+
+                    <button id="startBtn">
+                        Start
+                    </button>
+
+                    <button id="pauseBtn">
+                        Pause
+                    </button>
+
+                    <button id="resetBtn">
+                        Reset
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                 Focus Statistics
+            ========================== -->
+
+            <section class="focus-section">
+
+                <h2>📈 Focus Statistics</h2>
+
+                <div class="focus-stats">
+
+                    <div class="stat-card">
+
+                        <h3 id="todaySessions">0</h3>
+
+                        <p>Today's Sessions</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3 id="todayFocusTime">0 min</h3>
+
+                        <p>Focus Time</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3 id="weekSessions">0</h3>
+
+                        <p>This Week</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3 id="monthSessions">0</h3>
+
+                        <p>This Month</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                 Settings
+            ========================== -->
+
+            <section class="settings-section">
+
+                <h2>⚙️ Settings</h2>
+
+                <div class="setting-item">
+
+                    <label for="themeSelect">
+                        Theme
+                    </label>
+
+                    <select id="themeSelect">
+
+                        <option value="light">
+                            Light
+                        </option>
+
+                        <option value="dark">
+                            Dark
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="setting-item">
+
+                    <label for="workTime">
+                        Work Time (Minutes)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="workTime"
+                        min="1"
+                        value="25"
+                    >
+
+                </div>
+
+                <div class="setting-item">
+
+                    <label for="breakTimeInput">
+                        Break Time (Minutes)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="breakTimeInput"
+                        min="1"
+                        value="5"
+                    >
+
+                </div>
+
+                <button id="saveSettingsBtn">
+
+                    Save Settings
+
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>
