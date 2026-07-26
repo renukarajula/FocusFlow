@@ -22,7 +22,7 @@ registerForm.addEventListener("submit", async function (event) {
 
     try {
         //get all users
-        const getResponse = await fetch("http://localhost:3000/users");
+        const getResponse = await fetch("https://focusflow-api-6cxu.onrender.com/users");
         //convert response into array
         const users = await getResponse.json();
         const existingUser = users.find(function (user) {
@@ -39,7 +39,7 @@ registerForm.addEventListener("submit", async function (event) {
         };
 
         //save user
-        const postResponse = await fetch("http://localhost:3000/users", {
+        const postResponse = await fetch("https://focusflow-api-6cxu.onrender.com/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -157,7 +157,7 @@ taskForm.addEventListener("submit", async function (event) {
 
         if (editMode) {
 
-            response = await fetch(`http://localhost:3000/tasks/${editTaskId}`, {
+            response = await fetch(`https://focusflow-api-6cxu.onrender.com/tasks/${editTaskId}`, {
 
                 method: "PATCH",
 
@@ -180,7 +180,7 @@ taskForm.addEventListener("submit", async function (event) {
             task.completed = false;
             task.createdAt = new Date().toISOString();
 
-            response = await fetch("http://localhost:3000/tasks", {
+            response = await fetch("https://focusflow-api-6cxu.onrender.com/tasks", {
 
                 method: "POST",
 
@@ -243,7 +243,7 @@ async function loadTasks() {
     try {
          updateFilterButtons();
 
-        const response = await fetch("http://localhost:3000/tasks");
+        const response = await fetch("https://focusflow-api-6cxu.onrender.com/tasks");
 
         const tasks = await response.json();
         // ----------------------------
@@ -556,7 +556,7 @@ async function deleteTask(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+        const response = await fetch(`https://focusflow-api-6cxu.onrender.com/tasks/${id}`, {
 
             method: "DELETE"
 
@@ -591,7 +591,7 @@ async function completeTask(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+        const response = await fetch(`https://focusflow-api-6cxu.onrender.com/tasks/${id}`, {
 
             method: "PATCH",
 
@@ -633,7 +633,7 @@ async function editTask(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:3000/tasks/${id}`);
+        const response = await fetch(`https://focusflow-api-6cxu.onrender.com/tasks/${id}`);
 
         const task = await response.json();
 
